@@ -1,18 +1,16 @@
 programa {
 	funcao inicio() {
-	    escreva("Exemplo A\n")
-		inteiro a=5, b=6, c=7, d=8 
-		escreva("DIFERENCA = ")
-		escreva(a*b-c*d)
-
-		escreva("\nExemplo B\n")
-		inteiro f=0, g=0, h=7, i=8
-		escreva("DIFERENCA = ")
-		escreva(f*g-h*i)
+		inteiro a, b, c, d, dif
+		escreva("digite a:")
+		leia(a)
+		escreva("digite b:")
+		leia(b)
+		escreva("digite c:")
+		leia(c)
+		escreva("digite d:")
+		leia(d)
+		dif = a * b - c * d
+		escreva("DIFERENCA = ",dif,"\n")
 		
-		escreva("\nExemplo C\n")
-		inteiro j=5, k=6, l=-7, m=8
-		escreva("DIFERENCA = ")
-		escreva(j*k-l*m)
 	}
 }

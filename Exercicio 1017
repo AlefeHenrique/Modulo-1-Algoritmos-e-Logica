@@ -1,34 +1,17 @@
 programa {
+    inclua biblioteca Matematica --> mat
 	funcao inicio() {
-	    inteiro tempo1, velocidade1, tempo2, velocidade2, tempo3, velocidade3
-	    real distancia, litro 
-	    
-	   //Exemplo 1
-	    escreva("\nExemplo 1")
-	    tempo1=10
-	    velocidade1=85
-	    distancia= tempo1 * velocidade1
-	    litro=(distancia / 12)
-	    escreva("\nA quantidade de litros é de:\n")
-	    escreva(litro)
-	
-	//exemplo 2
-	    escreva("\nExemplo 2")
-	    tempo2=2
-	    velocidade2=92
-	    distancia= tempo2 * velocidade2
-	    litro=(distancia / 12)
-	    escreva("\nA quantidade de litros é de:\n")
-	    escreva(litro)
-    
-    //exemplo 3
-        escreva("\nExemplo 3")
-        tempo3=22
-	    velocidade3=67
-	    distancia= tempo3 * velocidade3
-	    litro=(distancia / 12)
-	    escreva("\nA quantidade de litros é de:\n")
-	    escreva(litro)
+		inteiro tempo, velmedia
+		real distancia, consumo
+		
+		escreva("quanto tempo demorou a viagem? ")
+		leia(tempo)
+		escreva("qual a velocidade media? ")
+		leia(velmedia)
+		
+		distancia = tempo * velmedia
+		escreva("entao voce percorreu ", distancia, " km\n")
+		consumo = distancia/12
+		escreva("voce consumiu ",mat.arredondar(consumo,3), " litros de combustivel\n")
 	}
 }
-

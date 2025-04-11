@@ -1,0 +1,39 @@
+programa {
+	funcao inicio() {
+		inteiro alcool = 0
+		inteiro gasolina = 0
+		inteiro diesel = 0
+		inteiro codigo
+		
+		enquanto (verdadeiro)
+		{
+		    escreva("Informe o codigo do combustivel: ")
+		    leia(codigo)
+		    
+		    se (codigo == 4)
+		    {
+		        escreva("\nMuito Obrigado!\n")
+		        escreva("\nAlcool: ", alcool)
+		        escreva("\nGasolina: ", gasolina)
+		        escreva("\nDiesel: ",diesel)
+		        pare
+		    }
+		    senao se (codigo == 1)
+		    {
+		        alcool = alcool + 1
+		    }
+		    senao se (codigo == 2)
+		    {
+		        gasolina = gasolina + 1
+		    }
+		    senao se (codigo == 3)
+		    {
+		        diesel = diesel + 1
+		    }
+		    senao
+		    {
+		        escreva("Código invalido. Por favor, informe um código entre 1 e 4.\n")
+		    }
+		}
+	}
+}
